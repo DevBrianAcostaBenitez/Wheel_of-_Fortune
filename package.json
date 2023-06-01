@@ -1,0 +1,24 @@
+{
+  "name": "wheel_of-_fortune",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/sass/styles.scss public/css/styles.css",
+    "sass-w": "sass --watch src/sass:public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevBrianAcostaBenitez/Wheel_of-_Fortune.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevBrianAcostaBenitez/Wheel_of-_Fortune/issues"
+  },
+  "homepage": "https://github.com/DevBrianAcostaBenitez/Wheel_of-_Fortune#readme",
+  "devDependencies": {
+    "sass": "^1.62.1"
+  }
+}
