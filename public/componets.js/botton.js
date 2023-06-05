@@ -1,1 +1,1 @@
-onclick= "funcionMaria"(jump)
+onclick= "salto"(jump)
