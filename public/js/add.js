@@ -30,6 +30,8 @@ function add() {
 
 function handleClickOutside(newListItem, event) {
   const target = event.target;
+
+ 
   const isGeneratedElement = generatedAddElements .some(element => element.contains(target));
   const isAddButton = target.classList.contains('addButton');
   const isConfirmButton = target.classList.contains('confirmAddButton');
