@@ -14,7 +14,7 @@ function modify() {
       var textField = document.createElement("input");
       textField.type = "text";
       textField.value = currentName.innerHTML;
-
+      textField.classList.add("editTextInput");
       var confirmButton = document.createElement("button");
       confirmButton.innerHTML = "Confirm";
       confirmButton.classList.add("confirmEditButton");
@@ -51,7 +51,7 @@ function modify() {
 
 document.addEventListener("click", function(event) {
   var target = event.target;
-  if (!target.matches("input[type='text']") && !target.matches(".editButton") && !target.matches(".modifyButton") ) {
+  if (!target.matches(".editTextInput") && !target.matches(".editButton") && !target.matches(".modifyButton") ) {
     removeEditButton();
   }
 });
@@ -59,7 +59,7 @@ document.addEventListener("click", function(event) {
 function removeEditButton() { 
   var list = document.getElementById("list");
   var items = list.getElementsByTagName("li");
-  var input =document.querySelectorAll("input[type='text']");
+  var input =document.querySelectorAll(".editTextInput");
   if (input.length>0){
   for (var i = 0; i < input.length; i++) {
     input[i].remove();
